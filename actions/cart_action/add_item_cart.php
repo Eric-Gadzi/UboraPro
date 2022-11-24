@@ -4,6 +4,7 @@
     $item_id = $_GET['item_id'];
     $item_qty = 1;
     $item_cat = $_GET['cat'];
+    $itemCartegory=$_GET['cat'];
  
     $ip_address = $_SERVER['REMOTE_ADDR'];
     

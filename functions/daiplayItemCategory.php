@@ -69,8 +69,11 @@ function showCategoryRow_fnc( $catId, $catName)
 }
 
 // Get All food Category in a table for
-function getAllfoodTable_fnc($item_cat){
-  $data = allAnItemCatgeory_ctr($item_cat);
+//function getAllfoodTable_fnc($item_cat){
+//   $data = allAnItemCatgeory_ctr($item_cat);
+
+function getAllfoodTable_fnc($cat_name){
+  $data=getAllItemCatgeory($cat_name);
 
     echo "<table class='table'>
     <thead class='table-warning'>
@@ -92,6 +95,8 @@ function getAllfoodTable_fnc($item_cat){
         $item_image = $item['item_image'];
         $item_keyword = $item['item_keyword'];
         getAllFoodTablerow_fnc($itemId,$itemName,$itemPrice, $itemDescription, $item_image, $item_keyword);
+
+       
     }
     echo "
     </tbody>
@@ -118,8 +123,8 @@ function  getAllFoodTablerow_fnc($itemId,$itemName,$itemPrice, $itemDescription,
 
 
 // Get All transport Category in a table for
-function getAllTransportTable_fnc($item_cat){
-  $data = allAnItemCatgeory_ctr($item_cat);
+function getAllTransportTable_fnc($cat_name){
+  $data = getAllItemCatgeory($cat_name);
 
     echo "<table class='table'>
     <thead class='table-warning'>
@@ -164,7 +169,6 @@ function  getAllTransportTablerow_fnc($itemId,$itemName,$itemPrice, $itemDescrip
   ";
 
 }
-
 
 
 

@@ -20,9 +20,6 @@ SET time_zone = "+00:00";
 --
 -- Database: `uborapro`
 --
-drop database if exists uborapro;
-create database uborapro;
-use uborapro;
 
 -- --------------------------------------------------------
 

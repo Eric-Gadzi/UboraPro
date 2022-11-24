@@ -104,7 +104,7 @@ require("../functions/daiplayItemCategory.php");
     <section>
       <header>
         <h2>Manage Food</h2>
-        <?php getAllfoodTable_fnc(1); ?>
+        <?php getAllfoodTable_fnc("Food"); ?>
       </header>
     </section>
     

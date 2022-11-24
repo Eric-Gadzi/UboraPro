@@ -156,7 +156,7 @@ if(isset($_GET['item_id'])){
     <section>
       <header>
         <h2>Manage Transport Services</h2>
-        <?php  getAllTransportTable_fnc(2); ?>
+        <?php  getAllTransportTable_fnc("Transport"); ?>
       </header>
     </section>
     

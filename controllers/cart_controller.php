@@ -29,9 +29,9 @@
         return $itemsCart->showAPersonItemsCartT($user_id,$ip_address,$item_id);
       } 
 
-      function showAPersonItemsCartCName_ctr($user_id,$ip_address, $itemCategory){
+      function showAPersonItemsCartCName_ctr($user_id,$ip_address,$itemCartegory){
         $itemsCart = new Cart();
-        return $itemsCart->showAPersonItemsCartCName($user_id,$ip_address,$itemCategory);
+        return $itemsCart->showAPersonItemsCartCName($user_id,$ip_address,$itemCartegory);
       } 
 
       function showAPersonItemsCart_ctr($user_id,$ip_address){

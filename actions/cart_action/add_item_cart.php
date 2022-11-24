@@ -2,14 +2,15 @@
 
     require_once dirname(__FILE__)."/../../controllers/cart_controller.php";
 
-    // $item_id = $_GET['item_id'];
-    // $item_qty = 1;
-    // $item_cat = $_GET['cat'];
-  
- 
-    // $ip_address = $_SERVER['REMOTE_ADDR'];
+    $item_id = $_GET['item_id'];
+    $item_qty = 1;
+    $item_cat = $_GET['cat'];
+    $ip_address = $_SERVER['REMOTE_ADDR'];
     
-
+    echo $item_cat;
+    echo $item_id;
+    echo $ip_address;
+    echo $item_qty;
 
     // if(!isset($_SESSION['user_id'])){
     //     session_start();

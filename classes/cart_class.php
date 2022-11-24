@@ -85,8 +85,8 @@
             return $this->db_query($sql);
          }
 
-         function decreaseTicketCartByOne($ticket_id,$ip_address, $user_id,$ticket_qty){
-            $sql="UPDATE `ticket_cart` SET `ticket_qty`=$ticket_qty-1 WHERE `ticket_id`='$ticket_id' and `ip_address`='$ip_address' and `user_id`=' $user_id'";
+         function decreaseTicketCartByOne($ticket_id, $user_id,$ticket_qty){
+            $sql="UPDATE `ticket_cart` SET `ticket_qty`=$ticket_qty-1 WHERE `ticket_id`='$ticket_id'  and `user_id`=' $user_id'";
             return $this->db_query($sql);
          }
 

@@ -12,7 +12,7 @@ session_start();
 $user_id = $_SESSION['user_id'];
 
 
-$result = updateticketCart($ticket_id, $ip_address, $user_id, $ticket_qty);
+$result = updateticketCart($ticket_id, $user_id, $ticket_qty);
 
 if($result){
     header("location: ../../view/Subtotal.php");

@@ -38,8 +38,8 @@
             return $this->db_query($sql);
         }
 
-        function determine_item_in_cart($user_id,$ip_address, $item_id){
-            $sql = "SELECT * FROM item_cart WHERE `item_id` = '$item_id' and `user_id` = '$user_id' and `ip_address` = '$ip_address'";
+        function determine_item_in_cart($user_id, $item_id){
+            $sql = "SELECT * FROM item_cart WHERE `item_id` = '$item_id' and `user_id` = '$user_id'";
 
             return $this->fetchAllData($sql);
         }

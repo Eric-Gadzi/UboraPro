@@ -34,9 +34,9 @@
         return $itemsCart->showAPersonItemsCartCName($user_id,$ip_address,$itemCartegory);
       } 
 
-      function determine_item_in_cart_ctr($user_id,$ip_address, $item_id){
+      function determine_item_in_cart_ctr($user_id, $item_id){
         $itemsCart = new Cart();
-        return $itemsCart->determine_item_in_cart($user_id,$ip_address, $item_id);
+        return $itemsCart->determine_item_in_cart($user_id, $item_id);
       }
 
       function showAPersonItemsCart_ctr($user_id,$ip_address){

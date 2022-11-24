@@ -12,10 +12,10 @@
     echo $ip_address;
     echo $item_qty;
 
-    // if(!isset($_SESSION['user_id'])){
-    //     session_start();
-    // }
-    // $user_id = $_SESSION['user_id'];
+    if(!isset($_SESSION['user_id'])){
+        session_start();
+    }
+    $user_id = $_SESSION['user_id'];
 
     // if(determine_item_in_cart_ctr($user_id,$ip_address, $item_id)){
     //     if($item_cat == 1){

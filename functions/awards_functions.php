@@ -47,7 +47,7 @@ function display_all_awards()
 
 function awards_form_right_image($award_id, $award_image, $award_name)
 {
-    echo "<img class='u-expanded-width-xs u-image u-image-circle u-preserve-proportions u-image-2' src='$award_image' alt='' data-image-width='906' data-image-height='1280'>
+    echo "<img class='u-expanded-width-xs u-image u-image-circle u-preserve-proportions u-image-2' src=".$award_image." alt='' data-image-width='906' data-image-height='1280'>
         <div class='u-form u-form-1'>
           <form action='../actions/user_action/vote_process.php' class='u-clearfix u-form-spacing-10 u-form-vertical u-inner-form' source='email' name='form' style='padding: 10px;'>
             <div class='u-form-group u-form-input-layout-horizontal u-form-radiobutton u-label-top u-form-group-3'>

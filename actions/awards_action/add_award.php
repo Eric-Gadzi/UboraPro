@@ -8,7 +8,7 @@
     $root_dir = ".\\..\\..\\images\\awards\\";
     $upload_root_dir = "../images/awards/";
     $file = $_FILES["award_image"];
-    $file_dest = $root_dir . basename($file["name"]);
+    $file_dest = $root_dir ."/" .basename($file["name"]);
     $upload_file_dest = $upload_root_dir . basename($file["name"]);
     $file_type = strtolower(pathinfo($file_dest, PATHINFO_EXTENSION));
 

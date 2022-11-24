@@ -17,7 +17,7 @@
     }
     $user_id = $_SESSION['user_id'];
 
-    echo $user_id;
+    echo "<br>user_id: ".$user_id;
 
     // if(determine_item_in_cart_ctr($user_id,$ip_address, $item_id)){
     //     if($item_cat == 1){

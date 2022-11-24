@@ -5,6 +5,25 @@ session_start();
 
 function display_search($award_name){
   $search_result = searchAward($award_name);
+  if($search_result){
+    foreach($search_result as $award){
+      $award_id = $award['award_id'];
+      $award_image = $award['award_image'];
+      $award_name = $award['award_name'];
+      $counter = 0;
+      if($counter%2==0){
+          awards_form_left_image($award_id, $award_image, $award_name);
+      }else{
+          awards_form_right_image($award_id, $award_image, $award_name);
+      }
+
+   
+  }
+  }else{
+    echo "no award category found";
+    display_all_awards();
+  }
+
 }
 
 function display_all_awards()

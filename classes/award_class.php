@@ -23,7 +23,7 @@ class Awards extends db_connection{
     }
 
     function searchAward($award_name){
-        $sql = "SELECT * FROM `award` where award_name LIKE %$award_name%";
+        $sql = "SELECT * FROM `award` where award_name LIKE '%$award_name%'";
 
         return $this->fetchAllData($sql);
     }

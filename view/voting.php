@@ -53,11 +53,15 @@ require_once("../functions/awards_functions.php");
           </a>
         </div>
         <div class="u-custom-menu u-nav-container">
-            <ul class="u-nav u-unstyled u-nav-1"><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="Home.php" style="padding: 10px 20px;">Home</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="Tickets.php" style="padding: 10px 20px;">Tickets</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="voting.php" style="padding: 10px 20px;">Voting</a>
-</li></ul>
-          </div>      
+          <ul class="u-nav u-unstyled u-nav-1">
+            <li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="Home.php" style="padding: 10px 20px;">Home</a>
+            </li>
+            <li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="Tickets.php" style="padding: 10px 20px;">Tickets</a>
+            </li>
+            <li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="voting.php" style="padding: 10px 20px;">Voting</a>
+            </li>
+          </ul>
+        </div>
         <div class="u-custom-menu u-nav-container">
           <ul class="u-nav u-unstyled u-nav-1">
             <li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="Home.php" style="padding: 10px 20px;">Home</a>
@@ -136,6 +140,13 @@ require_once("../functions/awards_functions.php");
             <div class="u-countdown-label u-countdown-label-6">Items</div>
           </div>
         </div>
+        <form action="" method="get">
+      <div class="input-group mb-3" style="margin-top: 20%;">
+        <button class="btn btn-outline-secondary" type="submit" id="button-addon1">Search</button>
+        <input type="text" name="award_name" class="form-control" placeholder="Search Award" aria-label="Example text with button addon" aria-describedby="button-addon1">
+      </div>
+
+    </form>
         <div class="u-countdown-message u-hidden">
           <p>Sorry, the time is up.</p>
         </div>
@@ -143,15 +154,20 @@ require_once("../functions/awards_functions.php");
     </div>
   </header>
   <section class="u-clearfix u-section-1" id="sec-bf0a">
+    
     <div class="u-clearfix u-sheet u-valign-top-sm u-sheet-1">
 
       <?php
 
-      display_all_awards();
-    
+      if (isset($_GET['award_name'])) {
+        display_search($_GET['award_name']);
+      } else {
+        display_all_awards();
+      }
+
       ?>
 
-      
+
 
     </div>
 

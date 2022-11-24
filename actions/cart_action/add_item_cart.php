@@ -1,6 +1,6 @@
 <?php 
-    echo  "linda is the sweetest";
-    // require_once dirname(__FILE__)."/../../controllers/cart_controller.php";
+
+    require_once dirname(__FILE__)."/../../controllers/cart_controller.php";
 
     // $item_id = $_GET['item_id'];
     // $item_qty = 1;

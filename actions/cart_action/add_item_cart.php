@@ -12,9 +12,9 @@
     echo $ip_address;
     echo $item_qty;
 
-    if(!isset($_SESSION['user_id'])){
-        session_start();
-    }
+
+    session_start();
+    
     $user_id = $_SESSION['user_id'];
 
     echo "<br>user_id: ".$user_id;

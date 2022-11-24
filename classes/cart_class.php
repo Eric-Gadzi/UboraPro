@@ -75,8 +75,8 @@
             return $this->db_query($sql);
          }
 
-         function deleteTicketCart($ticket_id,$ip_address,$user_id,$item_qty){
-            $sql="DELETE FROM `ticket_cart` WHERE `ticket_id`='$ticket_id' and `ip_address`='$ip_address' and `user_id` ='$user_id' and `ticket_qty`= '$item_qty'";
+         function deleteTicketCart($ticket_id,$user_id,$item_qty){
+            $sql="DELETE FROM `ticket_cart` WHERE `ticket_id`='$ticket_id' and `user_id` ='$user_id' and `ticket_qty`= '$item_qty'";
             return $this->db_query($sql);
          }
 

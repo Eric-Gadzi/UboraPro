@@ -8,7 +8,7 @@
     $item_qty = $_GET['ticket_qty'];
     $user_id = $_SESSION['user_id'];
 
-    $result = deleteTicketCart_ctr($ticket_id,$ip_address,$user_id,$item_qty);
+    $result = deleteTicketCart_ctr($ticket_id,$user_id,$item_qty);
 
     if($result){
         header("location: ../view/Subtotal.php");

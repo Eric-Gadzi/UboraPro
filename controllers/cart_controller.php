@@ -55,9 +55,9 @@
         return $ticketCart->addToTicketCart($ticket_id,$ip_address,$user_id,$ticket_qty);
       } 
 
-      function deleteTicketCart_ctr($ticket_id,$ip_address,$user_id,$item_qty){
+      function deleteTicketCart_ctr($ticket_id,$user_id,$item_qty){
         $ticketCart = new Cart();
-        return $ticketCart->deleteTicketCart($ticket_id,$ip_address,$user_id,$item_qty);
+        return $ticketCart->deleteTicketCart($ticket_id,$user_id,$item_qty);
       } 
 
       function increaseTicketCartByOne_ctr($ticket_id,$ip_address, $user_id,$ticket_qty){

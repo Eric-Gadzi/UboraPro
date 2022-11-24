@@ -71,7 +71,7 @@
 
   
       // delete ticket from cart;
-      $ticketList = showAPersonTicketCart_ctr($user_id,$ip_add);
+      $ticketList = showAPersonTicketCart_ctr($user_id);
       if($ticketList){
         print_r($ticketList);
       // foreach ($ticketList as $cart) {

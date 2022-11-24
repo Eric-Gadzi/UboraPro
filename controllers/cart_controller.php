@@ -70,9 +70,9 @@
         return $ticketCart->decreaseTicketCartByOne($ticket_id,$ip_address, $user_id,$ticket_qty);
       } 
 
-      function showAPersonTicketCart_ctr($user_id,$ip_address){
+      function showAPersonTicketCart_ctr($user_id){
         $ticketCart = new Cart();
-        return $ticketCart->showAPersonTicketCart($user_id,$ip_address);
+        return $ticketCart->showAPersonTicketCart($user_id);
       }
 
       function updateticketCart($ticket_id, $ip_address, $user_id, $qty){

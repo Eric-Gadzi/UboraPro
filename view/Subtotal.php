@@ -98,11 +98,11 @@
                   </thead>
                   <tbody class="u-table-body">
                     <?php
-                        $total = 0;
-                        $user_id = $_SESSION['user_id'];
+                      $total = 0;
+                      $user_id = $_SESSION['user_id'];
                       $ip_address = $_SERVER['REMOTE_ADDR'];
-                      $total += subtotalTicket($user_id, $ip_address);
-                      $total += item_subtotal($user_id, $ip_address);
+                      $total += subtotalTicket($user_id);
+                      $total += item_subtotal($user_id);
                     
                       $_SESSION['total'] = $total;
                      ?>

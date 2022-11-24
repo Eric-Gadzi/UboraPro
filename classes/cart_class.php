@@ -90,8 +90,8 @@
             return $this->db_query($sql);
          }
 
-         function showAPersonTicketCart($user_id,$ip_address){
-            $sql="SELECT ticket.ticket_id,ticket.ticket_type,ticket.ticket_price,ticket.ticket_date, ticket_cart.ip_address,ticket_cart.user_id, ticket_cart.ticket_qty FROM `ticket_cart`,ticket WHERE ticket.ticket_id=ticket_cart.ticket_id and ticket_cart.user_id='$user_id' and ticket_cart.ip_address = '$ip_address' ";
+         function showAPersonTicketCart($user_id){
+            $sql="SELECT ticket.ticket_id,ticket.ticket_type,ticket.ticket_price,ticket.ticket_date, ticket_cart.ip_address,ticket_cart.user_id, ticket_cart.ticket_qty FROM `ticket_cart`,ticket WHERE ticket.ticket_id=ticket_cart.ticket_id and ticket_cart.user_id='$user_id'";
             return $this->fetchOne($sql);
          }
 

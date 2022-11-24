@@ -19,23 +19,18 @@
 
     echo "<br>user_id: ".$user_id;
 
-    $result = determine_item_in_cart_ctr($user_id, $item_id);
+    $result1 = determine_item_in_cart_ctr($user_id, $item_id);
 
-    if($result){
-        echo "my sweet darling linda babes";
-    }else{
-        echo "ewwww";
+
+    if($result1){
+        if($item_cat == 1){
+            header("location:./../../view/transport.php");
+            return;
+        }else if($item_cat == 2){
+            header("location:./../../view/Subtotal.php");
+            return;
+        }
     }
-
-    // if(determine_item_in_cart_ctr($user_id,$ip_address, $item_id)){
-    //     if($item_cat == 1){
-    //         header("location:./../../view/transport.php");
-    //         return;
-    //     }else if($item_cat == 2){
-    //         header("location:./../../view/Subtotal.php");
-    //         return;
-    //     }
-      
         
     // }
 

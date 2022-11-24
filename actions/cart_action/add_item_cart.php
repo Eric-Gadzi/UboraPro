@@ -4,7 +4,7 @@
     $item_id = $_GET['item_id'];
     $item_qty = 1;
     $item_cat = $_GET['cat'];
-    $itemCartegory=$_GET['cat'];
+  
  
     $ip_address = $_SERVER['REMOTE_ADDR'];
     
@@ -15,13 +15,13 @@
     }
     $user_id = $_SESSION['user_id'];
 
-    if(showAPersonItemsCartCName_ctr($user_id,$ip_address,$itemCartegory)){
-        if($itemCartegory == "Food"){
+    if(determine_item_in_cart_ctr($user_id,$ip_address, $item_id)){
+        if($item_cat == 1){
             header("location:./../../view/transport.php");
             return;
-        }else{
+        }else if($item_cat == 2){
             header("location:./../../view/Subtotal.php");
-      
+            return;
         }
       
         

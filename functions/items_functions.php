@@ -1,10 +1,10 @@
 <?php 
     require_once dirname(__FILE__)."/../controllers/item_controller.php";
 
-function item_subtotal($user_id, $ip_address){
+function item_subtotal($user_id){
     $subtotal =0;
     $total = 0;
-    $item_List = showAPersonItemsCart_ctr($user_id,$ip_address);
+    $item_List = showAPersonItemsCart_ctr($user_id);
     if($item_List){
     foreach($item_List as $item){
         $item_id = $item['item_id'];

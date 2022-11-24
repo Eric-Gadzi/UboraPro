@@ -41,9 +41,9 @@
 
       
 
-      function showAPersonItemsCart_ctr($user_id,$ip_address){
+      function showAPersonItemsCart_ctr($user_id){
         $itemsCart = new Cart();
-        return $itemsCart->showAPersonItemsCart($user_id,$ip_address);
+        return $itemsCart->showAPersonItemsCart($user_id);
       }
 
      /**

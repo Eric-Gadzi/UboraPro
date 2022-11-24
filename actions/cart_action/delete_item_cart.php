@@ -8,7 +8,7 @@
     $ip_address = $_SERVER['REMOTE_ADDR'];
 
 
-    $result = deleteItemsCart_ctr($user_id, $ip_address,$item_id);
+    $result = deleteItemsCart_ctr($user_id,$item_id);
 
     if($result){
         echo "<script>alert('success')</script>";

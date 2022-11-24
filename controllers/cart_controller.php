@@ -9,9 +9,9 @@
         return $itemsCart->addToItemsCart($item_id,$ip_address,$user_id,$item_qty);
       } 
 
-      function deleteItemsCart_ctr($user_id, $ip_address,$item_id){
+      function deleteItemsCart_ctr($user_id,$item_id){
         $itemsCart = new Cart();
-        return $itemsCart->deleteItemsCart($user_id, $ip_address,$item_id);
+        return $itemsCart->deleteItemsCart($user_id, $item_id);
       }
       
       function increaseItemsCartByOne_ctr($item_id,$ip_address, $user_id){

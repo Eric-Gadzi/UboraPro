@@ -16,8 +16,8 @@
         }
 
         // deletes every item from user's cart 
-        function deleteItemsCart($user_id, $ip_address,$item_id){
-            $sql = "DELETE FROM `item_cart` WHERE  `ip_address` ='$ip_address' and `user_id`='$user_id' and `item_id`='$item_id'  ";
+        function deleteItemsCart($user_id, $item_id){
+            $sql = "DELETE FROM `item_cart` WHERE   `user_id`='$user_id' and `item_id`='$item_id'  ";
 
             return $this->db_query($sql);
         }

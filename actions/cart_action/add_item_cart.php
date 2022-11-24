@@ -7,19 +7,9 @@ $item_qty = 1;
 $item_cat = $_GET['cat'];
 $ip_address = $_SERVER['REMOTE_ADDR'];
 
-echo $item_cat;
-echo $item_id;
-echo $ip_address;
-echo $item_qty;
-
-
 session_start();
 
 $user_id = $_SESSION['user_id'];
-
-echo "<br>user_id: " . $user_id;
-
-
 
 
 if ($item_cat == 1) {

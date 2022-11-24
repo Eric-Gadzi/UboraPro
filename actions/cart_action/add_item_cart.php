@@ -19,6 +19,14 @@
 
     echo "<br>user_id: ".$user_id;
 
+    $result = determine_item_in_cart_ctr($user_id,$ip_address, $item_id);
+
+    if($result){
+        echo "my sweet darling linda babes";
+    }else{
+        echo "ewwww";
+    }
+
     // if(determine_item_in_cart_ctr($user_id,$ip_address, $item_id)){
     //     if($item_cat == 1){
     //         header("location:./../../view/transport.php");

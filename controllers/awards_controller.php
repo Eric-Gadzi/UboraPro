@@ -18,6 +18,11 @@
         return $award->getAllAwards();
     }
 
+    function searchAward($award_name){
+        $award =new Awards();
+        return $award->searchAward($award_name);
+    }
+
     function getAllAwardsAndNominees_ctr(){
         $award = new Awards();
 

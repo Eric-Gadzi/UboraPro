@@ -22,6 +22,12 @@ class Awards extends db_connection{
         return $this->fetchAllData($sql);
     }
 
+    function searchAward($award_name){
+        $sql = "SELECT * FROM `award` where award_name LIKE %$award_name%";
+
+        return $this->fetchAllData($sql);
+    }
+
     // this function would be used for display all awards and nominee
     function getAllAwardsAndNomineesA(){
         $sql = "SELECT award.award_id as award_id ,award.award_name as award_name,award.award_description as award_description,award.award_image as award_image,nominee.nominee_id as nominee_id,nominee.nominee_name as nominee_name,nominee.nominee_description as nominee_description,nominee.nominee_image as nominee_image FROM `award` ,nominee WHERE award.award_id=nominee.award_id";

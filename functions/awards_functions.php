@@ -2,6 +2,11 @@
 require_once("../controllers/awards_controller.php");
 require_once("../controllers/users_controller.php");
 session_start();
+
+function display_search($award_name){
+  $search_result = searchAward($award_name);
+}
+
 function display_all_awards()
 {
     $all_awards = getAllAwards_ctr();

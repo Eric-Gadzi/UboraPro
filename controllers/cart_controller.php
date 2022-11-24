@@ -77,7 +77,7 @@
 
       function updateticketCart($ticket_id,  $user_id, $qty){
         $ticketCart = new Cart();
-        return $ticketCart->updateticketCart($ticket_id,  $user_id, $qty);
+        return $ticketCart->updateticketCart($ticket_id, $user_id, $qty);
       }
 
 ?>

@@ -20,7 +20,7 @@ function display_search($award_name){
    
   }
   }else{
-    echo "no award category found";
+    echo "<script>alert('could not find award')</script>";
     display_all_awards();
   }
 

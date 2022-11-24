@@ -30,18 +30,18 @@
             header("location:./../../view/Subtotal.php");
             return;
         }
-    }
+    
         
-    // }
+    }
 
-    // $result = addToItemsCart_ctr($item_id,$ip_address,$user_id,$item_qty);
+    $result = addToItemsCart_ctr($item_id,$ip_address,$user_id,$item_qty);
 
-    // if($result){
-    //     echo "<script>alert('success')</script>";
-    //     header("location:./../../view/transport.php");
-    // }else{
-    //     echo "<script>alert('failed')</script>";
-    // }
+    if($result){
+        echo "<script>alert('success')</script>";
+        header("location:./../../view/transport.php");
+    }else{
+        echo "<script>alert('failed')</script>";
+    }
 
 
 ?>

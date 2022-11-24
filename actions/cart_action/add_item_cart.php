@@ -15,7 +15,7 @@
     $user_id = $_SESSION['user_id'];
 
     if(showAPersonItemsCartCName_ctr($user_id,$ip_address,$itemCartegory)){
-        if($item_cat == "Food"){
+        if($itemCartegory == "Food"){
             header("location:./../../view/transport.php");
             return;
         }else{
